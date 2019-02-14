@@ -22,7 +22,12 @@
 ## CNN projects
 
 ### Classification
-
+ - 고양이와 개 이미지 분류.
+ - overftting을 피하며, accuracy를 높혀 보자
+#### Try some techniques
+ 1. 모델구조 변화
+ 2. Data argument
+ 
 ### Segmentation
 
 
@@ -36,9 +41,9 @@
 ### Stock Market Prediction
 
 #### Try some techniques
-1. 모델구조 변화
-2. Early stopping 기법
-3. 여러 feature 이용해 보기
+ 1. 모델구조 변화
+ 2. Early stopping 기법
+ 3. 여러 feature 이용해 보기
 
 
 
