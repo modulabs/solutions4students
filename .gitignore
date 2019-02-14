@@ -1,0 +1,9 @@
+# .DS_Store
+.DS_Store
+
+# datasets
+datasets
+
+# .ipynb_checkpoints
+./rnn/stock_market_prediction/.ipynb_checkpoints
+
