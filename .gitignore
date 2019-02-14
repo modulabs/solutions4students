@@ -5,5 +5,4 @@
 datasets
 
 # .ipynb_checkpoints
-./rnn/stock_market_prediction/.ipynb_checkpoints
-
+rnn/stock_market_prediction/.ipynb_checkpoints

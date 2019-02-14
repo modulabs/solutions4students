@@ -1,5 +1,5 @@
 # Projects for students
-* Final update: 2019. 02. 06.
+* Final update: 2019. 02. 14.
 * All right reserved @ Modulabs 2019
 
 
