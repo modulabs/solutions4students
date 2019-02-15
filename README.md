@@ -1,14 +1,12 @@
 # Projects for students
-* Final update: 2019. 02. 14.
-* All right reserved @ Modulabs 2019
-
-
+* Final update: 2019. 02. 15.
+* All right reserved @ ModuLabs 2019
 
 
 ## Getting Started
 
 ### Prerequisites
-* [`TensorFlow`](https://www.tensorflow.org)
+* [`TensorFlow`](https://www.tensorflow.org) 1.12.0
 * Python 3.6
 * Python libraries:
   * `numpy`, `matplotblib`, `pandas`
@@ -22,13 +20,18 @@
 ## CNN projects
 
 ### Classification
- - 고양이와 개 이미지 분류.
+ - Google Flower dataset
  - overftting을 피하며, accuracy를 높혀 보자
 #### Try some techniques
- 1. 모델구조 변화
- 2. Data argument
+ 1. Change model architectures
+ 2. Data augmentation
+ 3. Various regularization
  
 ### Segmentation
+ - Giana dataset
+#### Try some techniques
+ 1. Change model architectures
+ 2. Change another models
 
 
 
@@ -47,6 +50,6 @@
 
 
 
-## Author
-[Il Gu Yi](https://github.com/ilguyi)
-Heedong Yoon
+## Authors
+* [Il Gu Yi](https://github.com/ilguyi)
+* Heedong Yoon

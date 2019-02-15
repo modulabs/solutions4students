@@ -5,4 +5,8 @@
 datasets
 
 # .ipynb_checkpoints
+cnn/image_classification/.ipynb_checkpoints
 rnn/stock_market_prediction/.ipynb_checkpoints
+
+# train dirs
+cnn/image_segmentation/train
