@@ -91,19 +91,76 @@
 
 
 
-
 ## RNN projects
-
 
 ### Sentiment Analysis
 
+#### Task
+* 모델 및 하이퍼파라미터들을 바꿔가며 accuracy를 높혀 보자
+* 밑에 제시된 여러가지 시도를 해보자
+* This code is borrowed from [Hvass-Labs/TensorFlow-Tutorials/20_Natural_Language_Processing](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/20_Natural_Language_Processing.ipynb) which is made of `tf.keras` APIs.
+* You can see the detail description or full tutorials: [tutorials link](https://github.com/Hvass-Labs/TensorFlow-Tutorials)
 
-### Stock Market Prediction
+#### Dataset
+* [IMDB datasets](https://www.imdb.com/interfaces/)
+* IMDB 영화사이트에서 50000개의 영화평을 가지고 positive/negative인지 구분
+
+#### Base code
+* Dataset: train, test로 split (validation data는 `model.fit`할 때 임의로 배정
+* Input data shape: (`batch_size`, `max_sequence_length`)
+* Output data shape: (`batch_size`, 1)
+* Architecture: 
+  * `Embedding` - `SimpleRNN` - `Dense (with Sigmoid)`
+  * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
+* Training
+  * `model.fit` 사용
+* Evaluation
+  * `model.evaluate` 사용 for test dataset
 
 #### Try some techniques
- 1. 모델구조 변화
- 2. Early stopping 기법
- 3. 여러 feature 이용해 보기
+* Change model architectures (Custom model)
+  * Use another cells (LSTM, GRU, etc.)
+  * Use dropout layers
+  * Change the `num_words`
+  * Change a `padding` method with 'post'
+* Data augmentation (if possible)
+
+
+
+### Stock Price Prediction
+
+#### Task
+* 모델 및 하이퍼파라미터들을 바꿔가며 accuracy를 높혀 보자
+* 밑에 제시된 여러가지 시도를 해보자
+* The main flow of this code is referenced in this [blog](https://medium.com/@aniruddha.choudhury94/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68)
+* LG전자의 주식데이터를 직접 다운 받아서 실제 예측을 해보자
+  * Train data: 2017년 1월 1일 ~ 2018년 12월 31일 데이터
+  * Test data: 2019년 1월 1일 ~ 2019년 1월 31일 데이터
+
+#### Dataset
+* [Yahoo finance datasets](https://www.imdb.com/interfaces/)
+* 2-3년간 daily stock price 데이터를 이용하여 미래 한달의 주식가격을 예측
+
+#### Base code
+* Dataset: train, test로 split
+* Input data shape: (`batch_size`, `past_day`=60, 1)
+* Output data shape: (`batch_size`, 1)
+* Architecture: 
+  * `LSTM` - `Dense`
+  * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
+* Training
+  * `model.fit` 사용
+* Evaluation
+  * `model.evaluate` 사용 for test dataset
+
+#### Try some techniques
+* Change model architectures (Custom model)
+  * Use another cells (LSTM, GRU, etc.)
+  * Use dropout layers
+  * Change the `past_day`
+* Data augmentation (if possible)
+* Try Early stopping
+* Use various features (open, high, low, close prices and volume features)
 
 
 
