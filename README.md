@@ -23,6 +23,7 @@
 
 #### Task
 * Overftting을 피하며, accuracy를 높혀 보자
+* Image size: 224 또는 299으로 변경하여 수행 (baseline code는 `image_size`: 150)
 * 밑에 제시된 여러가지 시도를 해보자
 
 #### Dataset
@@ -53,6 +54,7 @@
 
 #### Task
 * GIANA dataset으로 위내시경 이미지에서 용종을 segmentation 해보자
+* Image size: 256으로 변경하여 수행 (baseline code는 `image_size`: 64)
 * 밑에 제시된 여러가지 시도를 해보자
 * This code is borrowed from [TensorFlow tutorials/Image Segmentation](https://github.com/tensorflow/models/blob/master/samples/outreach/blogs/segmentation_blogpost/image_segmentation.ipynb) which is made of `tf.keras.layers` and `tf.enable_eager_execution()`.
 * You can see the detail description [tutorial link](https://github.com/tensorflow/models/blob/master/samples/outreach/blogs/segmentation_blogpost/image_segmentation.ipynb)  
