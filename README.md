@@ -1,5 +1,5 @@
 # Projects for students
-* Final update: 2019. 02. 15.
+* Final update: 2019. 02. 17.
 * All right reserved @ ModuLabs 2019
 
 
@@ -31,6 +31,8 @@
 
 #### Base code
 * Dataset: train, validation, test로 split
+* Input data shape: (`batch_size`, 150, 150, 3)
+* Output data shape: (`batch_size`, `num_classes`=5)
 * Architecture: 
   * `Conv2D` (x3) - `Dense` - `Softmax`
   * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
@@ -65,6 +67,8 @@
 
 #### Base code
 * Dataset: train, test로 split
+* Input data shape: (`batch_size`, 64, 64, 3)
+* Output data shape: (`batch_size`, 64, 64, 1)
 * Architecture: 
   * 간단한 U-Net 구조
   * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
