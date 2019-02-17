@@ -29,7 +29,7 @@
 * [Google flower datasets](https://github.com/tensorflow/models/blob/master/research/inception/inception/data/download_and_preprocess_flowers.sh)
 * 5개의 클래스(daisy, dandelion, roses, sunflowers, tulips)로 이루어진 꽃 이미지 데이터를 분류
 
-#### Base code
+#### Baseline code
 * Dataset: train, validation, test로 split
 * Input data shape: (`batch_size`, 150, 150, 3)
 * Output data shape: (`batch_size`, `num_classes`=5)
@@ -65,7 +65,7 @@
   * Train lables: 300 images with 1 channels (bmp format)
   * Image size: 574 x 500
 
-#### Base code
+#### Baseline code
 * Dataset: train, test로 split
 * Input data shape: (`batch_size`, 64, 64, 3)
 * Output data shape: (`batch_size`, 64, 64, 1)
@@ -105,7 +105,7 @@
 * [IMDB datasets](https://www.imdb.com/interfaces/)
 * IMDB 영화사이트에서 50000개의 영화평을 가지고 positive/negative인지 구분
 
-#### Base code
+#### Baseline code
 * Dataset: train, test로 split (validation data는 `model.fit`할 때 임의로 배정
 * Input data shape: (`batch_size`, `max_sequence_length`)
 * Output data shape: (`batch_size`, 1)
@@ -141,7 +141,7 @@
 * [Yahoo finance datasets](https://www.imdb.com/interfaces/)
 * 2-3년간 daily stock price 데이터를 이용하여 미래 한달의 주식가격을 예측
 
-#### Base code
+#### Baseline code
 * Dataset: train, test로 split
 * Input data shape: (`batch_size`, `past_day`=60, 1)
 * Output data shape: (`batch_size`, 1)
