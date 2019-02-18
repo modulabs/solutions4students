@@ -19,37 +19,6 @@
 
 ## CNN projects
 
-### Image Classification
-
-#### Task
-* Overftting을 피하며, accuracy를 높혀 보자
-* Image size: 224 또는 299으로 변경하여 수행 (baseline code는 `image_size`: 150)
-* 밑에 제시된 여러가지 시도를 해보자
-
-#### Dataset
-* [Google flower datasets](https://github.com/tensorflow/models/blob/master/research/inception/inception/data/download_and_preprocess_flowers.sh)
-* 5개의 클래스(daisy, dandelion, roses, sunflowers, tulips)로 이루어진 꽃 이미지 데이터를 분류
-
-#### Baseline code
-* Dataset: train, validation, test로 split
-* Input data shape: (`batch_size`, 150, 150, 3)
-* Output data shape: (`batch_size`, `num_classes`=5)
-* Architecture: 
-  * `Conv2D` (x3) - `Dense` - `Softmax`
-  * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
-* Training
-  * `model.fit_generator` 사용
-  * `tf.keras.preprocessing.image.ImageDataGenerator` 사용 for data augmentation
-* Evaluation
-  * `model.evaluate_generator` 사용 for test dataset
-
-#### Try some techniques
-* Change model architectures (Custom model)
-  * Or use pretrained models
-* Data augmentation
-* Various regularization methods
-
-
 ### Image Segmentation
 
 #### Task
@@ -90,6 +59,36 @@
 * Data augmentation
 * Various regularization methods
 
+
+### Image Classification
+
+#### Task
+* Overftting을 피하며, accuracy를 높혀 보자
+* Image size: 224 또는 299으로 변경하여 수행 (baseline code는 `image_size`: 150)
+* 밑에 제시된 여러가지 시도를 해보자
+
+#### Dataset
+* [Google flower datasets](https://github.com/tensorflow/models/blob/master/research/inception/inception/data/download_and_preprocess_flowers.sh)
+* 5개의 클래스(daisy, dandelion, roses, sunflowers, tulips)로 이루어진 꽃 이미지 데이터를 분류
+
+#### Baseline code
+* Dataset: train, validation, test로 split
+* Input data shape: (`batch_size`, 150, 150, 3)
+* Output data shape: (`batch_size`, `num_classes`=5)
+* Architecture: 
+  * `Conv2D` (x3) - `Dense` - `Softmax`
+  * [`tf.keras.layers`](https://www.tensorflow.org/api_docs/python/tf/keras/layers) 사용
+* Training
+  * `model.fit_generator` 사용
+  * `tf.keras.preprocessing.image.ImageDataGenerator` 사용 for data augmentation
+* Evaluation
+  * `model.evaluate_generator` 사용 for test dataset
+
+#### Try some techniques
+* Change model architectures (Custom model)
+  * Or use pretrained models
+* Data augmentation
+* Various regularization methods
 
 
 
