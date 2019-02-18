@@ -8,6 +8,7 @@
 #   * `tf.enable_eager_execution()`이 작동하지 않음
 #   * 따라서 예전 방식대로 `tf.Session()`을 이용하여 작성하거나 아래와 같이 2.0 version으로 작성하여야 함
 # * tf.version 2.0 API: [`tf.keras.metrics.MeanIoU`](https://www.tensorflow.org/versions/r2.0/api_docs/python/tf/keras/metrics/MeanIoU)
+# * 지금 이 코드는 `version 2` 코드를 이용하여 작성
 
 # ## Import modules
 

@@ -208,7 +208,7 @@ checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt")
 checkpoint = tf.train.Checkpoint(model=model)
 
 # Restore the latest checkpoint
-checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
+status = checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
 
 
 # ## Evaluate the test dataset and Plot
@@ -217,7 +217,7 @@ checkpoint.restore(tf.train.latest_checkpoint(checkpoint_dir))
 
 
 sess = tf.Session()
-sess.run(tf.global_variables_initializer())
+status.initialize_or_restore(sess)
 tf.logging.info('Start Session.')
 
 test_iter = test_dataset.make_one_shot_iterator()
