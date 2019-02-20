@@ -137,6 +137,7 @@
 * LG전자의 주식데이터를 직접 다운 받아서 실제 예측을 해보자
   * Train data: 2017년 1월 1일 ~ 2018년 12월 31일 데이터
   * Test data: 2019년 1월 1일 ~ 2019년 1월 31일 데이터
+  * Close price 예측 (baseline은 open price)
 
 #### Dataset
 * [Yahoo finance datasets](https://www.imdb.com/interfaces/)
