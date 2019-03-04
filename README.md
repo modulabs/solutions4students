@@ -1,19 +1,19 @@
 # Projects for students
-* Final update: 2019. 02. 17.
+* Final update: 2019. 03. 04.
 * All right reserved @ ModuLabs 2019
 
 
 ## Getting Started
 
 ### Prerequisites
-* [`TensorFlow`](https://www.tensorflow.org) 1.12.0
-* Python 3.6
+* [`TensorFlow`](https://www.tensorflow.org) above version 1.12
+* Python 3.6 (recommend Anaconda)
 * Python libraries:
   * `numpy`, `matplotblib`, `pandas`
   * `PIL`, `imageio` for images
   * `fix_yahoo_finance` for stock market prediction
 * Jupyter notebook
-* OS X and Linux (Not validated on Windows OS)
+* Ubuntu, OS X and Windows OS
 
 
 
