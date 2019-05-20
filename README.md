@@ -1,12 +1,12 @@
-# Projects for students
-* Final update: 2019. 03. 04.
+# Solutions of projects for students 
+* Final update: 2019. 05. 20.
 * All right reserved @ ModuLabs 2019
 
 
 ## Getting Started
 
 ### Prerequisites
-* [`TensorFlow`](https://www.tensorflow.org) above version 1.12
+* [`TensorFlow`](https://www.tensorflow.org) above version 1.13
 * Python 3.6 (recommend Anaconda)
 * Python libraries:
   * `numpy`, `matplotblib`, `pandas`
